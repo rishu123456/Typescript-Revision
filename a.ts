@@ -1,5 +1,6 @@
-function greet(firstname:string,lastname:string){
-    console.log("hii "+firstname+" "+lastname);
+function Add(a:number,b:number){
+    return a+b;
 }
 
-greet("rishu","rai");
+const val= Add(5,8);
+console.log(val);
