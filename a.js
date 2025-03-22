@@ -1,6 +1,11 @@
 "use strict";
-function Add(a, b) {
-    return a + b;
+// import { use } from "react";
+function CheckAge(user) {
+    if (user.age > 18) {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
-const val = Add(5, 8);
-console.log(val);
+console.log(CheckAge({ firstName: "rishu", lastName: "rai", age: 12 }));
