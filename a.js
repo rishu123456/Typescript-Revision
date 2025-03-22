@@ -1,7 +1,11 @@
 "use strict";
-function Afetr1Sec(fn) {
-    setTimeout(fn, 1000);
+// import { use } from "react";
+function CheckAge(user) {
+    if (user.age > 18) {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
-Afetr1Sec(() => {
-    console.log("hiii there");
-});
+console.log(CheckAge({ firstName: "rishu", lastName: "rai", age: 12 }));
