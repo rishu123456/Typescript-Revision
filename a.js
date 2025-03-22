@@ -1,6 +1,7 @@
 "use strict";
-function Add(a, b) {
-    return a + b;
+function Afetr1Sec(fn) {
+    setTimeout(fn, 1000);
 }
-const val = Add(5, 8);
-console.log(val);
+Afetr1Sec(() => {
+    console.log("hiii there");
+});
