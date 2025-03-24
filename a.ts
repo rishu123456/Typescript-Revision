@@ -1,39 +1,9 @@
-// import { use } from "react";
-
-// function PrintDetail(user:{name:string;lastname:string;age:number}):boolean{
-//    if(user.age>18){
-//     return true;
-//    }
-//    else{
-//     return false;
-//    }
-
-// }
-
-//  const val= PrintDetail(
-//     {
-//         name:"rishu",
-//         lastname:"tai",
-//         age:21,
-//     }
-// )
-// console.log(val);
-
-interface User  {
-    firstName : string,
-    lastName : string,
-    age: number
-}
-
-
-function CheckAge(user:User){
-    if(user.age>18){
-        return true;
-    }
-    else{
-       return false;
-    }
+function S<T>(h:T[]){
+    return h[0];
 
 }
 
-console.log(CheckAge({firstName:"rishu",lastName:"rai",age:12}))
+ const ele1=S<string>(["rishu","rai"]);
+const ele2=S<number>([1,2]);
+console.log(ele1);
+console.log(ele2);

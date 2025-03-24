@@ -1,11 +1,8 @@
 "use strict";
-// import { use } from "react";
-function CheckAge(user) {
-    if (user.age > 18) {
-        return true;
-    }
-    else {
-        return false;
-    }
+function S(h) {
+    return h[0];
 }
-console.log(CheckAge({ firstName: "rishu", lastName: "rai", age: 12 }));
+const ele1 = S(["rishu", "rai"]);
+const ele2 = S([1, 2]);
+console.log(ele1);
+console.log(ele2);
