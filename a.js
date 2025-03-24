@@ -1,6 +1,8 @@
 "use strict";
-function Add(a, b) {
-    return a + b;
+function S(h) {
+    return h[0];
 }
-const val = Add(5, 8);
-console.log(val);
+const ele1 = S(["rishu", "rai"]);
+const ele2 = S([1, 2]);
+console.log(ele1);
+console.log(ele2);
